@@ -1,13 +1,21 @@
 
 import './App.css'
+import HomeSection from './Layouts/HomeSection'
+import Services from './Layouts/Services'
+
 
 function App() {
 
 
   return (
-    <>
-     <p>hello</p>
-    </>
+
+    <div>
+       <HomeSection/>
+       <Services/>
+
+    </div>
+
+
   )
 }
 
