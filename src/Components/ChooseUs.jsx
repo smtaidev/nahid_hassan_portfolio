@@ -33,7 +33,7 @@ export default function ChooseUs() {
   ];
 
   return (
-    <section className="relative   pt-30 max-w-screen-2xl mx-auto">
+    <section className="relative   py-30 max-w-screen-2xl mx-auto">
       
 
       <div>
@@ -41,7 +41,7 @@ export default function ChooseUs() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-6 relative w-[286px] mx-auto">
             <div className="w-9 h-9 bg-[#01C561] rounded-full z-50 " />
-            <div className="w-9 h-9 bg-[#00ff7b42] rounded-full absolute z-0 left-6" />
+            <div className="w-9 h-9 bg-[#00ff7b42] rounded-full absolute z-0 left-5" />
 
             <span className="text-[#222325] font-medium text-3xl ml-4">
               Why Choose Us
