@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroSection() {
   return (
  
-      <div className="flex items-center gap-12 mt-18 max-w-screen-2xl mx-auto relative z-10">
+      <div className="flex items-center h-screen gap-12  max-w-screen-2xl mx-auto relative z-10">
         {/* left side */}
         <div className="space-y-18">
           <h1 className="max-w-[808px] font-semibold text-7xl text-[#222325] leading-[96px]">

@@ -12,7 +12,7 @@ export default function ServicesOfWork() {
     <div>
       <nav className="bg-[#1a1a1a] py-4">
         <div>
-          <ul className="flex items-center gap-40 justify-center flex-wrap">
+          <ul className="flex items-center gap-18 justify-center flex-wrap">
             {services.map((service, index) => (
               <li key={service.name} className="flex items-center gap-2">
                 <a
@@ -22,7 +22,7 @@ export default function ServicesOfWork() {
                   {service.name}
                 </a>
                 {index < services.length - 1 && (
-                  <li className="text-emerald-500 text-xl ml-26" aria-hidden="true">
+                  <li className="text-emerald-500 text-xl ml-11" aria-hidden="true">
                     <img src="https://i.postimg.cc/fygkThXr/Group-3.png" alt="" />
                   </li>
                 )}

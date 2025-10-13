@@ -3,7 +3,7 @@ import AgencyLogo from "./AgencyLogo";
 
 export default function Navbar() {
   return (
-    <div className="navbar  bg-transparent  max-w-screen-2xl mx-auto h-[140px]">
+    <div className="navbar  bg-transparent  max-w-screen-2xl mx-auto h-[120px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
