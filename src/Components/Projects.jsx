@@ -28,7 +28,7 @@ export default function Projects() {
 
   return (
     <section className="py-20 text-center">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-screen-2xl mx-auto">
         {/* Section Header */}
         <div className="mb-22">
           <div className="flex items-center justify-center gap-2 mb-2">

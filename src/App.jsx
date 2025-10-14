@@ -4,6 +4,9 @@ import AboutUs from './Layouts/AboutUs'
 import AllProjects from './Layouts/AllProjects'
 import Footer from './Layouts/Footer'
 import HomeSection from './Layouts/HomeSection'
+import OurServices from './Layouts/OurServices'
+import OurTeam from './Layouts/OurTeam'
+import Review from './Layouts/Review'
 import Services from './Layouts/Services'
 import WhyChooseUs from './Layouts/WhyChooseUs'
 
@@ -19,6 +22,9 @@ function App() {
        <WhyChooseUs/>
        <AboutUs/>
        <AllProjects/>
+       <OurServices/>
+       <OurTeam/>
+       <Review/>
        <Footer/>
        
 

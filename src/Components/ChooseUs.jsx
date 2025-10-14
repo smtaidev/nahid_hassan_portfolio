@@ -1,6 +1,14 @@
 import React from "react";
 import { Sparkles, Settings, Handshake, TrendingUp } from "lucide-react";
+import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
+
 export default function ChooseUs() {
+  const ref = useRef();
+  const imgRef = useRef(null);
   const features = [
     {
       icon: Sparkles,
@@ -33,9 +41,7 @@ export default function ChooseUs() {
   ];
 
   return (
-    <section className="relative   py-30 max-w-screen-2xl mx-auto">
-      
-
+    <section className="relative py-30 max-w-screen-2xl mx-auto" ref={ref}>
       <div>
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -57,17 +63,29 @@ export default function ChooseUs() {
         <div className=" grid grid-cols-12 gap-10 pt-12">
           {/* Left - Image */}
 
-          <div className="h-[600px] col-span-5  rounded-2xl overflow-hidden shadow-xl">
+          <div
+            className="h-[700px] col-span-5 rounded-2xl overflow-hidden shadow-xl"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+            ref={imgRef}
+          >
             <img
               src="https://i.postimg.cc/Y9FzcbWP/10f4b2fee12f7a842069282a27eb9ad7fe6e5f08.jpg"
               alt="Professional developer"
-          
-              className="object-cover h-[600px]"
+              className="h-full"
             />
           </div>
 
           {/* Right - Feature Cards */}
-          <div className="col-span-7 h-[600px]">
+          <div
+            className="col-span-7 h-[600px]"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
             <div className="grid sm:grid-cols-2 gap-10">
               {features.map((feature, index) => (
                 <div

@@ -4,8 +4,8 @@ import AgencyLogo from "../Components/AgencyLogo";
 export default function Footer() {
   return (
     <div className="bg-neutral  pt-22 ">
-      <footer className="flex items-center justify-between sm:footer-horizontal text-white   max-w-screen-2xl mx-auto">
-        <aside className="space-y-12">
+      <footer className="xl:flex flex-row-reverse items-center justify-between sm:footer-horizontal text-white   max-w-screen-2xl mx-auto">
+        <aside className="space-y-12 xl:pb-0 pb-6">
           <div className="flex items-end">
             <h1 className="mr-1 text-4xl font-semibold text-white">
               Fusecode{" "}

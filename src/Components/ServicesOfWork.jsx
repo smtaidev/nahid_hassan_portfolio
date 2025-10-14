@@ -1,5 +1,9 @@
 import React from "react";
-
+import { useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const services = [
   { name: "AI App Development", href: "#ai-app" },
   { name: "AI Website Development", href: "#ai-website" },
@@ -8,8 +12,9 @@ const services = [
 ];
 
 export default function ServicesOfWork() {
+   const ref = useRef();
   return (
-    <div>
+    <div  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" ref={ref} >
       <nav className="bg-[#1a1a1a] py-4">
         <div>
           <ul className="flex items-center gap-18 justify-center flex-wrap">

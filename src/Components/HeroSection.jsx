@@ -1,11 +1,19 @@
 import React from "react";
-
+import { useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 export default function HeroSection() {
+
+   const ref = useRef();
+  const imgRef = useRef(null);
+
   return (
  
-      <div className="flex items-center h-screen gap-12  max-w-screen-2xl mx-auto relative z-10">
+      <div className="flex items-center h-screen gap-12  max-w-screen-2xl mx-auto relative z-10" ref={ref}>
         {/* left side */}
-        <div className="space-y-18">
+        <div className="space-y-18"  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <h1 className="max-w-[808px] font-semibold text-7xl text-[#222325] leading-[96px]">
             Transforming Your Ideas into AI-Powered Apps & Websites
           </h1>
@@ -67,7 +75,7 @@ export default function HeroSection() {
           </div>
         </div>
         {/* right side */}
-        <div>
+        <div   data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"   ref={imgRef}>
           <div className="relative">
             <div className="relative">
               <img
