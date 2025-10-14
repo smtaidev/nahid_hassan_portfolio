@@ -3,7 +3,7 @@ import AgencyLogo from "./AgencyLogo";
 
 export default function Navbar() {
   return (
-    <div className="navbar  bg-transparent  max-w-screen-2xl mx-auto h-[120px]">
+    <div className="navbar  inter bg-transparent  max-w-screen-2xl mx-auto h-[120px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,20 +28,39 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a className="font-semibold text-xl text-[#222325]">Home</a>
+              <a className="font-semibold text-xl text-[#222325]" href="#home">
+                Home
+              </a>
             </li>
 
             <li>
-              <a className="font-semibold text-xl text-[#222325]">Services</a>
+              <a
+                className="font-semibold text-xl text-[#222325]"
+                href="#services"
+              >
+                Services
+              </a>
             </li>
             <li>
-              <a className="font-semibold text-xl text-[#222325]">Portfolio</a>
+              <a
+                className="font-semibold text-xl text-[#222325]"
+                href="#projects"
+              >
+                Portfolio
+              </a>
             </li>
             <li>
-              <a className="font-semibold text-xl text-[#222325]">Review</a>
+              <a
+                className="font-semibold text-xl text-[#222325]"
+                href="#review"
+              >
+                Review
+              </a>
             </li>
             <li>
-              <a className="font-semibold text-xl text-[#222325]">About Us</a>
+              <a className="font-semibold text-xl text-[#222325]" href="#about">
+                About Us
+              </a>
             </li>
           </ul>
         </div>
@@ -51,41 +70,63 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a className="font-semibold text-xl text-[#222325]">Home</a>
+            <a className="font-semibold text-xl text-[#222325]" href="#home">
+              Home
+            </a>
           </li>
 
           <li>
-            <a className="font-semibold text-xl text-[#222325]">Services</a>
+            <a
+              className="font-semibold text-xl text-[#222325]"
+              href="#services"
+            >
+              Services
+            </a>
           </li>
           <li>
-            <a className="font-semibold text-xl text-[#222325]">Portfolio</a>
+            <a
+              className="font-semibold text-xl text-[#222325]"
+              href="#projects"
+            >
+              Portfolio
+            </a>
           </li>
           <li>
-            <a className="font-semibold text-xl text-[#222325]">Review</a>
+            <a className="font-semibold text-xl text-[#222325]" href="#review">
+              Review
+            </a>
           </li>
           <li>
-            <a className="font-semibold text-xl text-[#222325]">About Us</a>
+            <a className="font-semibold text-xl text-[#222325]" href="#about">
+              About Us
+            </a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
-          Hire Us on Fiverr{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-            />
-          </svg>
-        </button>
+        <a
+          href="https://www.fiverr.com/fusecode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+            Hire Us on Fiverr{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </button>
+        </a>
       </div>
     </div>
   );

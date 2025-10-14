@@ -5,8 +5,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Doubledot from "./Doubledot";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
@@ -15,35 +15,43 @@ export default function AllReview() {
   const testimonials = [
     {
       id: 1,
-      name: "Luca_johe",
-      location: "Cyprus",
-      rating: 4,
-      text: '"I am absolutely amazed by the AI mobile app this seller delivered. The app is smooth, fast, and packed with intelligent features that feel truly smart and intuitive. I especially appreciate how the AI provides personalized recommendations and automates tasks seamlessly."',
+      name: "frank_harri",
+      location: "United States",
+      rating: 5,
+      text: '"I am beyond satisfied with the AI mobile app delivered by this seller. Every interaction was smooth and reassuring, making the development process stress-free. I highly recommend their services to anyone looking for a high-quality AI-powered mobile app."',
       color: "bg-emerald-500",
     },
     {
       id: 2,
-      name: "Richard Sus",
+      name: "richard_sus",
       location: "United States",
       rating: 5,
-      text: "\"I'm always impressed by his work, this is not the first time I've hired him, and he delivered flawlessly once again. The AI content video generator app works seamlessly with all AI voice functionalities. I will choose him again for future projects.\"",
+      text: '"I’m always impressed by his work, this is not the first time I’ve hired him, and he delivered flawlessly once again. The AI content video generator app works seamlessly with all AI voice functionalities. I will choose him again for future projects."',
       color: "bg-red-500",
     },
     {
       id: 3,
-      name: "Adam Dain",
-      location: "Canada",
+      name: "stephjustin",
+      location: "Cyprus",
       rating: 5,
-      text: '"Outstanding support and a faultless app. created a mobile eCommerce app with AI that surpassed my expectations. I\'m very satisfied and will definitely hire again."',
+      text: '"I am thoroughly impressed with the professionalism and technical expertise demonstrated by the developer. They delivered a sophisticated AI-powered job portal application featuring a modern and intuitive user interface. Thank you for your delivery."',
       color: "bg-blue-500",
     },
     {
       id: 4,
-      name: "Adam Dain",
-      location: "Canada",
+      name: "r_yusha",
+      location: "United States",
       rating: 5,
-      text: '"Outstanding support and a faultless app. created a mobile eCommerce app with AI that surpassed my expectations. I\'m very satisfied and will definitely hire again."',
-      color: "bg-blue-500",
+      text: '"I recently tried the new AI-powered voice assistant in this e-commerce app, and I’m genuinely impressed. It makes shopping so much faster and more intuitive. The assistant is smart, responsive, and understands my queries almost perfectly. It even remembers my preferences, making future shopping experiences smoother. Thank you."',
+      color: "bg-emerald-500",
+    },
+    {
+      id: 5,
+      name: "steven_kimberl",
+      location: "United States",
+      rating: 5,
+      text: '"He did a fantastic job developing my AI-powered e-commerce app for my candy store. The 3 screens, integrated products, and chatbot features are all perfect. The pink and white theme looks playful and inviting. He exceeded my expectations. I absolutely recommend him and will surely work with him again."',
+      color: "bg-red-500",
     },
   ];
 
@@ -54,8 +62,7 @@ export default function AllReview() {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative max-w-screen-2xl mx-auto py-20" ref={ref}
->
+    <div className="relative inter max-w-screen-2xl mx-auto py-20" ref={ref}>
       <div className="mb-22">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Doubledot />
@@ -63,7 +70,7 @@ export default function AllReview() {
             Reviews
           </p>
         </div>
-        <h2 className="text-6xl leading-[76px]  font-semibold text-[#222325] text-center">
+        <h2 className="text-6xl bricolage leading-[76px]  font-semibold text-[#222325] text-center">
           Happy Customers on Fiverr
         </h2>
       </div>
@@ -138,43 +145,38 @@ export default function AllReview() {
         scrollbar={{ draggable: true }}
       >
         {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <div
-              className="bg-white w-[449px] h-[695px] rounded-4xl py-30 px-12 text-center " data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+      <SwiperSlide key={testimonial.id}>
+  <div className="relative w-[428px] h-[655px] mx-auto">
+    {/* Floating Quote Icon - completely outside clipped div */}
+    <div
+      className={`w-12 h-12 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}
+    >
+      <Quote className="w-6 h-6 text-white" />
+    </div>
 
-              style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
-            >
-              {/* Icon */}
-              <div
-                className={`w-12 h-12 ${testimonial.color} rounded-full flex items-center justify-center mb-6`}
-              >
-                <Quote className="w-6 h-6 text-white" />
-              </div>
+    {/* Clipped Card */}
+    <div
+      className="bg-white w-full h-full rounded-4xl py-30 space-y-4 px-12 text-center relative z-0"
+      style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
+    >
+      {/* Name */}
+      <h3 className="font-semibold text-gray-900 text-lg">{testimonial.name}</h3>
+      <p className="text-sm text-gray-500">{testimonial.location}</p>
 
-              {/* Name */}
-              <h3 className="font-semibold text-gray-900 text-lg">
-                {testimonial.name}
-              </h3>
-              <p className="text-sm text-gray-500">{testimonial.location}</p>
+      {/* Rating */}
+      <div className="flex gap-1 mb-4 justify-center">
+        {[...Array(testimonial.rating)].map((_, i) => (
+          <svg key={i} className="w-4 h-4 fill-orange-400" viewBox="0 0 20 20">
+            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+          </svg>
+        ))}
+      </div>
 
-              {/* Rating */}
-              <div className="flex gap-1 mb-4 justify-center">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-4 h-4 fill-orange-400"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-              </div>
+      <p className="text-gray-600 leading-relaxed text-sm">{testimonial.text}</p>
+    </div>
+  </div>
+</SwiperSlide>
 
-              <p className="text-gray-600 leading-relaxed text-sm">
-                {testimonial.text}
-              </p>
-            </div>
-          </SwiperSlide>
         ))}
       </Swiper>
     </div>

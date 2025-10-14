@@ -41,7 +41,7 @@ export default function ChooseUs() {
   ];
 
   return (
-    <section className="relative py-30 max-w-screen-2xl mx-auto" ref={ref}>
+    <section className="relative inter py-30 max-w-screen-2xl mx-auto" ref={ref}>
       <div>
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -49,11 +49,11 @@ export default function ChooseUs() {
             <div className="w-9 h-9 bg-[#01C561] rounded-full z-50 " />
             <div className="w-9 h-9 bg-[#00ff7b42] rounded-full absolute z-0 left-5" />
 
-            <span className="text-[#222325] font-medium text-3xl ml-4">
+            <span className="text-[#222325]  font-medium text-3xl ml-4">
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-6xl font-semibold text-[#222325] leading-[76px]">
+          <h2 className="text-6xl bricolage font-semibold text-[#222325] leading-[76px]">
             Smart AI Solutions<br></br>
             You Can Trust on Fiverr
           </h2>
@@ -90,7 +90,7 @@ export default function ChooseUs() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow hover:border-[#01C561] hover:border-1 "
                 >
                   <div
                     className={`${feature.color} w-14 h-14 rounded-full flex items-center justify-center mb-4`}

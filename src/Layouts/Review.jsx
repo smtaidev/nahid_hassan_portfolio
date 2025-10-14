@@ -3,7 +3,7 @@ import AllReview from "../Components/AllReview";
 
 export default function Review() {
   return (
-    <div className="relative pb-30">
+    <div className="relative pb-30" id="review">
       <img
         src="https://i.postimg.cc/FzLzp3vw/Frame-2147226959.png"
         alt=""

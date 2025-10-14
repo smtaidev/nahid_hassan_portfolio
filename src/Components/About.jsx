@@ -9,7 +9,7 @@ AOS.init();
 export default function About() {
    const ref = useRef();
   return (
-    <section className="relative max-w-screen-2xl mx-auto overflow-hidden py-30" ref={ref} >
+    <section className="relative inter max-w-screen-2xl mx-auto overflow-hidden py-30" ref={ref} >
       <div className="relative z-10 ">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
@@ -21,7 +21,7 @@ export default function About() {
               </span>
             </div>
 
-            <h2 className="text-6xl font-semibold text-[#222325] leading-[76px] text-balance mb-8">
+            <h2 className="text-6xl bricolage font-semibold text-[#222325] leading-[76px] text-balance mb-8">
               Empowering Your Business with Innovative Software Solutions
             </h2>
 
@@ -37,7 +37,7 @@ export default function About() {
           </div>
 
           {/* Right Content - Stats Grid */}
-          <div className="grid grid-cols-2 w-[696px] " data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+          <div className="grid grid-cols-2 w-[696px] bricolage" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
 >
             {/* Level 2 */}
             <div className="relative px-13 py-15  text-end">

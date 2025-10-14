@@ -1,5 +1,6 @@
 
 import './App.css'
+import './index.css'
 import AboutUs from './Layouts/AboutUs'
 import AllProjects from './Layouts/AllProjects'
 import Footer from './Layouts/Footer'

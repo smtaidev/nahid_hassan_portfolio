@@ -9,16 +9,18 @@ import {
 } from "lucide-react";
 import Doubledot from "./Doubledot";
 import { useRef } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
 export default function OurProvideService() {
-   const ref = useRef();
+  const ref = useRef();
   const services = [
     {
-      icon: <Smartphone className="h-6 w-6 text-[#01C561] group-hover:text-white" />,
+      icon: (
+        <Smartphone className="h-6 w-6 text-[#01C561] group-hover:text-white" />
+      ),
       title: "Mobile App UI/UX & Development",
       description:
         "From concept to code, I design and build mobile apps that are fast, intuitive, and visually engaging. Every screen is crafted for usability, performance, and real-world impact.",
@@ -30,7 +32,9 @@ export default function OurProvideService() {
         "I develop intelligent web applications that blend sleek design with AI capabilities such as chatbots, smart search, and process automation — delivering seamless, data-aware user experiences.",
     },
     {
-      icon: <MessageSquare className="h-6 w-6 text-[#01C561] group-hover:text-white" />,
+      icon: (
+        <MessageSquare className="h-6 w-6 text-[#01C561] group-hover:text-white" />
+      ),
       title: "AI Chatbot & Automation Integration",
       description:
         "Integrate GPT-powered assistants into your app or website. From customer support to lead engagement, I build chatbots that understand, respond, and automate intelligently.",
@@ -42,13 +46,17 @@ export default function OurProvideService() {
         "I handle both frontend and backend to deliver secure, scalable, and high-performing web solutions. Perfect for startups or agencies looking for complete, end-to-end development.",
     },
     {
-      icon: <LayoutDashboard className="h-6 w-6 text-[#01C561] group-hover:text-white" />,
+      icon: (
+        <LayoutDashboard className="h-6 w-6 text-[#01C561] group-hover:text-white" />
+      ),
       title: "Dashboard & Admin System Design",
       description:
         "I design and develop smart dashboards and admin panels that turn complex data into actionable insights — with clean visuals, smooth navigation, and real-time analytics.",
     },
     {
-      icon: <Lightbulb className="h-6 w-6 text-[#01C561] group-hover:text-white" />,
+      icon: (
+        <Lightbulb className="h-6 w-6 text-[#01C561] group-hover:text-white" />
+      ),
       title: "AI Consulting & Strategy",
       description:
         "Unsure where to start with AI? I provide strategic guidance on integrating AI into your business model — identifying opportunities, designing solutions, and planning implementation efficiently.",
@@ -56,7 +64,10 @@ export default function OurProvideService() {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto overflow-hidden py-30" ref={ref}>
+    <section
+      className="max-w-screen-2xl mx-auto inter overflow-hidden py-30"
+      ref={ref}
+    >
       <div>
         {/* Header */}
         <div className="mb-12">
@@ -66,7 +77,7 @@ export default function OurProvideService() {
               Our Services
             </span>
           </div>
-          <h2 className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-balance bricolage text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Make Your Projects Look More <br></br>Elegant And Stylish
           </h2>
         </div>
@@ -74,8 +85,13 @@ export default function OurProvideService() {
         {/* Services Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div className="relative"  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
->
+            <div
+              className="relative"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+            >
               {/* Green bar */}
               <div className="absolute -left-1.5 top-8 h-[89px] w-[8px] rounded-3xl bg-[#01C561]"></div>
 
@@ -101,7 +117,9 @@ export default function OurProvideService() {
                   {service.description}
                 </p>
                 <a
-                  href={service.href}
+                  href="https://www.fiverr.com/fusecode"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm font-medium text-emerald-600 transition-colors hover:text-emerald-700"
                 >
                   Order Now

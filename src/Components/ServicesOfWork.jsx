@@ -14,7 +14,7 @@ const services = [
 export default function ServicesOfWork() {
    const ref = useRef();
   return (
-    <div  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" ref={ref} >
+    <div className="bricolage"  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" ref={ref} >
       <nav className="bg-[#1a1a1a] py-4">
         <div>
           <ul className="flex items-center gap-18 justify-center flex-wrap">

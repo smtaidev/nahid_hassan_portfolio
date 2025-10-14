@@ -1,23 +1,23 @@
 import React from "react";
 import Doubledot from "./Doubledot";
 import { useRef } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
 export default function Team() {
-   const ref = useRef();
+  const ref = useRef();
   return (
-    <section className="py-16 xl:h-[1012px]" ref={ref}>
+    <section className="py-16 inter xl:h-[1012px]" ref={ref}>
       <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
         {/* Left content */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 space-y-11">
           <p className="text-[#222325] text-3xl font-medium flex items-center">
             <Doubledot />
             Our Team
           </p>
-          <h2 className="text-6xl font-semibold text-[#222325] leading-[76px]">
+          <h2 className="text-6xl bricolage font-semibold text-[#222325] leading-[76px]">
             Meet Our Innovative Skilled Team Members
           </h2>
           <p className="text-xl leading-[1.6] text-[#353535]">
@@ -29,27 +29,39 @@ export default function Team() {
             that bridge gaps, simplify complexity, and drive meaningful change
             for businesses worldwide.
           </p>
-          <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
-            Hire Us on Fiverr{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </button>
+          <a
+            href="https://www.fiverr.com/fusecode"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+              Hire Us on Fiverr{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </button>
+          </a>
         </div>
 
         {/* Right content - scrollable team pictures with fade effect */}
-        <div className="lg:w-1/2 relative "  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <div
+          className="lg:w-1/2 relative "
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+        >
           {/* Top fade */}
           <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
 

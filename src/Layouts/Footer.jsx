@@ -3,8 +3,8 @@ import AgencyLogo from "../Components/AgencyLogo";
 
 export default function Footer() {
   return (
-    <div className="bg-neutral  pt-22 ">
-      <footer className="xl:flex flex-row-reverse items-center justify-between sm:footer-horizontal text-white   max-w-screen-2xl mx-auto">
+    <div className="bg-neutral inter  pt-22 ">
+      <footer className="xl:flex flex-row items-center justify-between sm:footer-horizontal text-white   max-w-screen-2xl mx-auto">
         <aside className="space-y-12 xl:pb-0 pb-6">
           <div className="flex items-end">
             <h1 className="mr-1 text-4xl font-semibold text-white">
@@ -12,7 +12,7 @@ export default function Footer() {
             </h1>
             <p className="w-2 h-2 rounded-full bg-[#01C561]"></p>
           </div>
-          <div>
+          <div className="bricolage">
             <p className="font-bold text-6xl leading-[81px] text-white">
               Get Started Today
             </p>
@@ -20,35 +20,60 @@ export default function Footer() {
               Let's Talk
             </p>
           </div>
-
-          <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
-            Hire Us on Fiverr{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
-          </button>
+          <a
+            href="https://www.fiverr.com/fusecode"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+              Hire Us on Fiverr{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </button>
+          </a>
         </aside>
         <nav className="flex text-[#D9D9D9]">
           {/*  menu*/}
           <div>
             <ul className="space-y-2 mr-14">
-              <li className="text-2xl font-semibold text-white">Menu</li>
-              <li className="text-lg">Home</li>
-              <li className="text-lg">Services</li>
-              <li className="text-lg">Portfolio</li>
-              <li className="text-lg">Reviews</li>
-              <li className="text-lg">About Us</li>
+              <li>
+                <a className=" text-lg " href="#home">
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a className=" text-lg " href="#services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a className=" text-lg " href="#projects">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a className=" text-lg " href="#review">
+                  Review
+                </a>
+              </li>
+              <li>
+                <a className="text-lg " href="#about">
+                  About Us
+                </a>
+              </li>
             </ul>
           </div>
           {/* privacy */}
