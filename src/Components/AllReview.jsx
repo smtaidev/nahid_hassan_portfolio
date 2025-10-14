@@ -66,11 +66,11 @@ export default function AllReview() {
       <div className="mb-22">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Doubledot />
-          <p className="text-[#222325] font-medium text-3xl leading-[24px]">
+          <p className="text-[#222325] font-medium xl:text-3xl text-lg leading-[24px]">
             Reviews
           </p>
         </div>
-        <h2 className="text-6xl bricolage leading-[76px]  font-semibold text-[#222325] text-center">
+        <h2 className="xl:text-6xl text-2xl bricolage xl:leading-[76px] leading-[50px]  font-semibold text-[#222325] text-center">
           Happy Customers on Fiverr
         </h2>
       </div>
@@ -123,7 +123,21 @@ export default function AllReview() {
       <Swiper
         modules={[Navigation]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={3} // default for large screens
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // mobile devices
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2, // small tablets
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3, // large screens
+            spaceBetween: 50,
+          },
+        }}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
@@ -145,38 +159,45 @@ export default function AllReview() {
         scrollbar={{ draggable: true }}
       >
         {testimonials.map((testimonial) => (
-      <SwiperSlide key={testimonial.id}>
-  <div className="relative w-[428px] h-[655px] mx-auto">
-    {/* Floating Quote Icon - completely outside clipped div */}
-    <div
-      className={`w-12 h-12 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}
-    >
-      <Quote className="w-6 h-6 text-white" />
-    </div>
+          <SwiperSlide key={testimonial.id}>
+            <div className="relative xl:w-[428px] w-[300px] xl:h-[655px] h-[585px] mx-auto ">
+              {/* Floating Quote Icon - completely outside clipped div */}
+              <div
+                className={`w-12 h-12 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}
+              >
+                <Quote className="w-6 h-6 text-white" />
+              </div>
 
-    {/* Clipped Card */}
-    <div
-      className="bg-white w-full h-full rounded-4xl py-30 space-y-4 px-12 text-center relative z-0"
-      style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
-    >
-      {/* Name */}
-      <h3 className="font-semibold text-gray-900 text-lg">{testimonial.name}</h3>
-      <p className="text-sm text-gray-500">{testimonial.location}</p>
+              {/* Clipped Card */}
+              <div
+                className="bg-white w-full h-full rounded-4xl py-30 space-y-4 px-12 text-center relative z-0"
+                style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
+              >
+                {/* Name */}
+                <h3 className="font-semibold text-gray-900 text-lg">
+                  {testimonial.name}
+                </h3>
+                <p className="text-sm text-gray-500">{testimonial.location}</p>
 
-      {/* Rating */}
-      <div className="flex gap-1 mb-4 justify-center">
-        {[...Array(testimonial.rating)].map((_, i) => (
-          <svg key={i} className="w-4 h-4 fill-orange-400" viewBox="0 0 20 20">
-            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-          </svg>
-        ))}
-      </div>
+                {/* Rating */}
+                <div className="flex gap-1 mb-4 justify-center">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <svg
+                      key={i}
+                      className="w-4 h-4 fill-orange-400"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
 
-      <p className="text-gray-600 leading-relaxed text-sm">{testimonial.text}</p>
-    </div>
-  </div>
-</SwiperSlide>
-
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {testimonial.text}
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

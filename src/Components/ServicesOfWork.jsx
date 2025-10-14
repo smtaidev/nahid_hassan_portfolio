@@ -15,9 +15,9 @@ export default function ServicesOfWork() {
    const ref = useRef();
   return (
     <div className="bricolage"  data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="600" ref={ref} >
-      <nav className="bg-[#1a1a1a] py-4">
+      <nav className="bg-[#1a1a1a] xl:py-4 py-10 ">
         <div>
-          <ul className="flex items-center gap-18 justify-center flex-wrap">
+          <ul className="xl:flex flex-row items-center xl:gap-18 justify-center flex-wrap">
             {services.map((service, index) => (
               <li key={service.name} className="flex items-center gap-2">
                 <a
@@ -27,7 +27,7 @@ export default function ServicesOfWork() {
                   {service.name}
                 </a>
                 {index < services.length - 1 && (
-                  <li className="text-emerald-500 text-xl ml-11" aria-hidden="true">
+                  <li className="text-emerald-500 text-xl ml-11 xl:inline hidden " aria-hidden="true">
                     <img src="https://i.postimg.cc/fygkThXr/Group-3.png" alt="" />
                   </li>
                 )}

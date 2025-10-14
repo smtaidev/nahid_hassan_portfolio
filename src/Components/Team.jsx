@@ -12,12 +12,12 @@ export default function Team() {
     <section className="py-16 inter xl:h-[1012px]" ref={ref}>
       <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
         {/* Left content */}
-        <div className="lg:w-1/2 space-y-11">
-          <p className="text-[#222325] text-3xl font-medium flex items-center">
+        <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2">
+          <p className="text-[#222325] xl:text-3xl text-lg font-medium flex items-center ">
             <Doubledot />
             Our Team
           </p>
-          <h2 className="text-6xl bricolage font-semibold text-[#222325] leading-[76px]">
+          <h2 className="xl:text-6xl text-2xl bricolage font-semibold text-[#222325] xl:leading-[76px] leading-[50px] ">
             Meet Our Innovative Skilled Team Members
           </h2>
           <p className="text-xl leading-[1.6] text-[#353535]">
@@ -75,7 +75,7 @@ export default function Team() {
             <div className="grid grid-cols-2 gap-6 ">
               {/* Rajib Hosen - Small card, top right */}
               {/* Rajib Hosen */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
+              <div className="bg-white p-4 col-span-1 xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
                   src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
                   alt="Rajib Hosen"
@@ -91,7 +91,7 @@ export default function Team() {
               </div>
 
               {/* Mehedi Hasan */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
+              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
                   src="https://i.postimg.cc/YCH7HbDj/image.png"
                   alt="Rajib Hosen"
@@ -107,7 +107,7 @@ export default function Team() {
               </div>
 
               {/* Maudud Ahmed */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
+              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
                   src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
                   alt="Rajib Hosen"
@@ -123,7 +123,7 @@ export default function Team() {
               </div>
 
               {/* Peter Simons */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
+              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
                   src="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
                   alt="Rajib Hosen"
@@ -139,7 +139,7 @@ export default function Team() {
               </div>
 
               {/* John Doe */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
+              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
                   src="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
                   alt="John Doe "
@@ -155,7 +155,7 @@ export default function Team() {
               </div>
 
               {/* Jane Smith */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
+              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
                   src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
                   alt="Jane Smith"

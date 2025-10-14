@@ -10,7 +10,8 @@ export default function HeroSection() {
 
   return (
     <div
-      className="flex inter items-center h-screen gap-12  max-w-screen-2xl mx-auto relative z-10"
+     className="flex flex-col xl:flex-row items-center h-auto xl:h-screen gap-12 max-w-screen-2xl mx-auto relative z-10 py-5 xl:py-0 inter"
+
       ref={ref}
     >
       {/* left side */}
@@ -21,10 +22,10 @@ export default function HeroSection() {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <h1 className="bricolage  max-w-[808px] font-semibold text-7xl text-[#222325] leading-[96px]">
+        <h1 className="bricolage  xl:max-w-[808px] font-semibold xl:text-7xl text-2xl text-[#222325] xl:leading-[96px] leading-[50px]">
           Transforming Your Ideas into AI-Powered Apps & Websites
         </h1>
-        <p className="font-medium text-2xl max-w-[764px] leading-[1.6]">
+        <p className="font-medium xl:text-2xl text-lg xl:max-w-[764px] leading-[1.6]">
           With deep expertise in AI and full-stack development, we’ve built
           apps, websites, and custom chatbots for clients on Fiverr — achieving
           consistent ★5.0 reviews and long-term partnerships.
@@ -32,7 +33,7 @@ export default function HeroSection() {
         <div>
           <button>
             <a
-           className="px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2"
+              className="xl:px-6 px-3 xl:py-3 py-1 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto xl:gap-2 gap-1"
               href="https://www.fiverr.com/fusecode"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,36 +57,36 @@ export default function HeroSection() {
           </button>
           <a
             href="https://www.fiverr.com/users/fusecode/portfolio?roleIds="
-            className="underline underline-offset-8 ml-8 font-semibold text-xl"
-              target="_blank"
-              rel="noopener noreferrer"
+            className="underline underline-offset-8 ml-8 font-semibold xl:text-xl text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             See Our Works
           </a>
         </div>
 
         <div className="flex items-center">
-          <div className="space-y-3 pr-11">
-            <h1 className="text-5xl font-semibold text-[#222325]  text-start">
+          <div className="space-y-3 xl:pr-11 pr-3">
+            <h1 className="xl:text-5xl text-xl font-semibold text-[#222325]  text-start">
               Level 2
             </h1>
-            <p className="text-[#353535] font-medium text-2xl text-start">
+            <p className="text-[#353535] font-medium xl:text-2xl text-lg text-start">
               Fiverr Seller
             </p>
           </div>
-          <div className="space-y-3 px-11 border-l-1 border-r-1 border-gray-300">
-            <h1 className="text-5xl font-semibold text-[#222325]  text-start">
+          <div className="space-y-3 xl:px-11 px-3 border-l-1 border-r-1 border-gray-300">
+            <h1 className="xl:text-5xl text-xl font-semibold text-[#222325]  text-start">
               100+
             </h1>
-            <p className="text-[#353535] font-medium text-2xl text-start">
+            <p className="text-[#353535] font-medium xl:text-2xl text-lg text-start">
               Reviews
             </p>
           </div>
-          <div className="space-y-3 pl-11">
-            <h1 className="text-5xl font-semibold text-[#222325]  text-start">
+          <div className="space-y-3 xl:pl-11 pl-3">
+            <h1 className="xl:text-5xl text-xl font-semibold text-[#222325]  text-start">
               5.0
             </h1>
-            <p className="text-[#353535] font-medium text-2xl text-start">
+            <p className="text-[#353535] font-medium xl:text-2xl text-lg text-start">
               Ratings
             </p>
           </div>
@@ -97,27 +98,28 @@ export default function HeroSection() {
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
-        ref={imgRef}
+        ref={imgRef} 
+        className="xl:pt-0 pt-5"
       >
         <div className="relative">
           <div className="relative">
             <img
               src="https://i.postimg.cc/4dkp1XHq/51e837216b294d69a844813e668d09beec0f0afe.png"
               alt=""
-              className="w-[729px] h-[538px] rounded-xl"
+              className="xl:w-[729px] xl:h-[538px] rounded-xl"
             />
             <img
               src="https://i.postimg.cc/FHtQ9cj8/Group-1.png"
-              className="absolute -top-9 -right-9"
+              className="absolute -top-9 xl:-right-9 -right-2  xl:w-[150px] w-[70px]"
               alt=""
             />
           </div>
 
-          <div className="w-md h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
-            <h1 className="text-center font-semibold text-4xl text-white">
+          <div className="xl:w-md w-sm xl:h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
+            <h1 className="text-center font-semibold xl:text-4xl text-xl text-white">
               MAUDUD AHMAD
             </h1>
-            <p className="text-center font-medium text-2xl text-black">
+            <p className="text-center font-medium xl:text-2xl text-lg text-black">
               CEO at Fusecode
             </p>
           </div>

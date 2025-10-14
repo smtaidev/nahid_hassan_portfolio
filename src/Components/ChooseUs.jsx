@@ -49,22 +49,22 @@ export default function ChooseUs() {
             <div className="w-9 h-9 bg-[#01C561] rounded-full z-50 " />
             <div className="w-9 h-9 bg-[#00ff7b42] rounded-full absolute z-0 left-5" />
 
-            <span className="text-[#222325]  font-medium text-3xl ml-4">
+            <span className="text-[#222325]  font-medium xl:text-3xl text-xl ml-4">
               Why Choose Us
             </span>
           </div>
-          <h2 className="text-6xl bricolage font-semibold text-[#222325] leading-[76px]">
+          <h2 className="xl:text-6xl text-2xl bricolage font-semibold text-[#222325] xl:leading-[76px] leading-[35px]">
             Smart AI Solutions<br></br>
             You Can Trust on Fiverr
           </h2>
         </div>
 
         {/* Content Grid */}
-        <div className=" grid grid-cols-12 gap-10 pt-12">
+        <div className=" xl:grid flex-row grid-cols-12 gap-10 pt-12">
           {/* Left - Image */}
 
           <div
-            className="h-[700px] col-span-5 rounded-2xl overflow-hidden shadow-xl"
+            className="xl:h-[700px] col-span-5 rounded-2xl overflow-hidden shadow-xl xl:mb-0 mb-5"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
@@ -86,7 +86,7 @@ export default function ChooseUs() {
             data-aos-easing="ease-in-sine"
             data-aos-duration="600"
           >
-            <div className="grid sm:grid-cols-2 gap-10">
+            <div className="grid xl:grid-cols-2 grid-cols-1 gap-10">
               {features.map((feature, index) => (
                 <div
                   key={index}

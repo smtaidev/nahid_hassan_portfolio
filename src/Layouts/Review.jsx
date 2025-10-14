@@ -7,7 +7,7 @@ export default function Review() {
       <img
         src="https://i.postimg.cc/FzLzp3vw/Frame-2147226959.png"
         alt=""
-        className="absolute -top-50 right-0 w-[414px] h-[463px]"
+        className="absolute -top-50 right-0 w-[414px] h-[463px]  xl:inline hidden"
       />
       <AllReview />
     </div>

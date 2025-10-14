@@ -106,7 +106,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        <button className="px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2">
+        <button className="xl:px-6 px-3 xl:py-3 py-1 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto xl:gap-2 gap-1">
             Hire Us on Fiverr{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

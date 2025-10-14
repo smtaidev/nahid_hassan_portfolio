@@ -43,11 +43,11 @@ export default function Projects() {
         <div className="mb-22">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Doubledot />
-            <p className="text-[#222325] font-medium text-3xl leading-[24px]">
+            <p className="text-[#222325] font-medium xl:text-3xl text-lg leading-[24px] ">
               Our Recent Projects
             </p>
           </div>
-          <h2 className="text-6xl bricolage leading-[76px]  font-semibold text-[#222325] text-center">
+          <h2 className="xl:text-6xl text-2xl bricolage xl:leading-[76px] leading-[52px]  font-semibold text-[#222325] text-center">
             See How We Turn Complex <br></br> Ideas Into Powerful Solutions
           </h2>
         </div>
