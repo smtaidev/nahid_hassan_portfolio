@@ -1,9 +1,15 @@
 import React from "react";
 import Doubledot from "./Doubledot";
+import { useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function Team() {
+   const ref = useRef();
   return (
-    <section className="py-16 xl:h-[1012px]">
+    <section className="py-16 xl:h-[1012px]" ref={ref}>
       <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
         {/* Left content */}
         <div className="lg:w-1/2">
@@ -43,7 +49,7 @@ export default function Team() {
         </div>
 
         {/* Right content - scrollable team pictures with fade effect */}
-        <div className="lg:w-1/2 relative ">
+        <div className="lg:w-1/2 relative "  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           {/* Top fade */}
           <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
 

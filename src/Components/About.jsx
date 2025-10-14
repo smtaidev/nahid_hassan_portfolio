@@ -1,9 +1,15 @@
 import React from "react";
 import Doubledot from "./Doubledot";
+import { useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function About() {
+   const ref = useRef();
   return (
-    <section className="relative max-w-screen-2xl mx-auto overflow-hidden py-30">
+    <section className="relative max-w-screen-2xl mx-auto overflow-hidden py-30" ref={ref} >
       <div className="relative z-10 ">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
@@ -31,7 +37,8 @@ export default function About() {
           </div>
 
           {/* Right Content - Stats Grid */}
-          <div className="grid grid-cols-2 w-[696px] ">
+          <div className="grid grid-cols-2 w-[696px] " data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+>
             {/* Level 2 */}
             <div className="relative px-13 py-15  text-end">
               <div className="text-4xl font-bold text-gray-900 mb-2">

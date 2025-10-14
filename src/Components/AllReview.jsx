@@ -5,8 +5,13 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Doubledot from "./Doubledot";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function AllReview() {
+  const ref = useRef();
   const testimonials = [
     {
       id: 1,
@@ -49,7 +54,8 @@ export default function AllReview() {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative max-w-screen-2xl mx-auto py-20">
+    <div className="relative max-w-screen-2xl mx-auto py-20" ref={ref}
+>
       <div className="mb-22">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Doubledot />
@@ -134,7 +140,8 @@ export default function AllReview() {
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
             <div
-              className="bg-white w-[449px] h-[695px] rounded-4xl py-30 px-12 text-center "
+              className="bg-white w-[449px] h-[695px] rounded-4xl py-30 px-12 text-center " data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+
               style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
             >
               {/* Icon */}

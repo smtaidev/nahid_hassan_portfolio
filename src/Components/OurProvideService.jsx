@@ -8,8 +8,14 @@ import {
   Lightbulb,
 } from "lucide-react";
 import Doubledot from "./Doubledot";
+import { useRef } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function OurProvideService() {
+   const ref = useRef();
   const services = [
     {
       icon: <Smartphone className="h-6 w-6 text-[#01C561] group-hover:text-white" />,
@@ -50,7 +56,7 @@ export default function OurProvideService() {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto overflow-hidden py-30">
+    <section className="max-w-screen-2xl mx-auto overflow-hidden py-30" ref={ref}>
       <div>
         {/* Header */}
         <div className="mb-12">
@@ -68,7 +74,8 @@ export default function OurProvideService() {
         {/* Services Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <div className="relative">
+            <div className="relative"  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+>
               {/* Green bar */}
               <div className="absolute -left-1.5 top-8 h-[89px] w-[8px] rounded-3xl bg-[#01C561]"></div>
 

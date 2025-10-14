@@ -1,8 +1,14 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Doubledot from "./Doubledot";
+import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function Projects() {
+  const ref = useRef();
   const projects = [
     {
       title: "Fashion E-Commerce App",
@@ -27,7 +33,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-20 text-center">
+    <section className="py-20 text-center" ref={ref}>
       <div className="max-w-screen-2xl mx-auto">
         {/* Section Header */}
         <div className="mb-22">
@@ -48,6 +54,10 @@ export default function Projects() {
             <div
               key={i}
               className="relative bg-white rounded-2xl shadow-md overflow-hidden group transition  hover:border-[#01C561] hover:border-2   hover:bg-[#cdf1df] border border-transparent  "
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
             >
               <div className="relative rounded-2xl  p-5">
                 <div className="rounded-xl overflow-hidden mb-5">
