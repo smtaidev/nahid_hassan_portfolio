@@ -28,37 +28,34 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a className="font-semibold text-xl text-[#222325]" href="#home">
+              <a className="font-medium text-lg text-[#222325]" href="#home">
                 Home
               </a>
             </li>
 
             <li>
-              <a
-                className="font-semibold text-xl text-[#222325]"
+              <a className="font-medium text-lg text-[#222325]"
                 href="#services"
               >
                 Services
               </a>
             </li>
             <li>
-              <a
-                className="font-semibold text-xl text-[#222325]"
+             <a className="font-medium text-lg text-[#222325]"
                 href="#projects"
               >
                 Portfolio
               </a>
             </li>
             <li>
-              <a
-                className="font-semibold text-xl text-[#222325]"
+               <a className="font-medium text-lg text-[#222325]"
                 href="#review"
               >
                 Review
               </a>
             </li>
             <li>
-              <a className="font-semibold text-xl text-[#222325]" href="#about">
+               <a className="font-medium text-lg text-[#222325]" href="#about">
                 About Us
               </a>
             </li>
@@ -69,38 +66,38 @@ export default function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a className="font-semibold text-xl text-[#222325]" href="#home">
-              Home
-            </a>
-          </li>
+           <li>
+              <a className="font-medium text-lg text-[#222325]" href="#home">
+                Home
+              </a>
+            </li>
 
-          <li>
-            <a
-              className="font-semibold text-xl text-[#222325]"
-              href="#services"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              className="font-semibold text-xl text-[#222325]"
-              href="#projects"
-            >
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a className="font-semibold text-xl text-[#222325]" href="#review">
-              Review
-            </a>
-          </li>
-          <li>
-            <a className="font-semibold text-xl text-[#222325]" href="#about">
-              About Us
-            </a>
-          </li>
+            <li>
+              <a className="font-medium text-lg text-[#222325]"
+                href="#services"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+             <a className="font-medium text-lg text-[#222325]"
+                href="#projects"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+               <a className="font-medium text-lg text-[#222325]"
+                href="#review"
+              >
+                Review
+              </a>
+            </li>
+            <li>
+               <a className="font-medium text-lg text-[#222325]" href="#about">
+                About Us
+              </a>
+            </li>
         </ul>
       </div>
       <div className="navbar-end">
@@ -109,7 +106,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+        <button className="px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2">
             Hire Us on Fiverr{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

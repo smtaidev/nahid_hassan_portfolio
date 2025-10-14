@@ -34,7 +34,9 @@ export default function Team() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+             <button className=" shadow-none border-none px-6 py-3   bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2">
+              
+              
               Hire Us on Fiverr{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,9 +75,9 @@ export default function Team() {
             <div className="grid grid-cols-2 gap-6 ">
               {/* Rajib Hosen - Small card, top right */}
               {/* Rajib Hosen */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-8">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                  src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
                   alt="Rajib Hosen"
                   className="w-full h-[370px] object-cover"
                 />
@@ -84,28 +86,28 @@ export default function Team() {
                   <h3 className="font-semibold text-2xl text-[#222325]">
                     Rajib Hosen
                   </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
+                  <p className="text-xl text-[#4E4E4E]">UI/UX Designer</p>
                 </div>
               </div>
 
               {/* Mehedi Hasan */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-8">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                  src="https://i.postimg.cc/YCH7HbDj/image.png"
                   alt="Rajib Hosen"
                   className="w-full h-[370px] object-cover"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
+                    Mehedi Hasan
                   </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
+                  <p className="text-xl text-[#4E4E4E]">Web Developer</p>
                 </div>
               </div>
 
               {/* Maudud Ahmed */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-8">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
                   src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
                   alt="Rajib Hosen"
@@ -114,16 +116,16 @@ export default function Team() {
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
+                   Maudud Ahmed
                   </h3>
                   <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
                 </div>
               </div>
 
               {/* Peter Simons */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-8">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                  src="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
                   alt="Rajib Hosen"
                   className="w-full h-[370px] object-cover"
                 />
@@ -137,34 +139,34 @@ export default function Team() {
               </div>
 
               {/* John Doe */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-6">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
                 <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
-                  alt="Rajib Hosen"
+                  src="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
+                  alt="John Doe "
                   className="w-full h-[370px] object-cover"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
+                    John Doe 
                   </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
+                  <p className="text-xl text-[#4E4E4E]">Sales Department</p>
                 </div>
               </div>
 
               {/* Jane Smith */}
-              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-6">
+              <div className="bg-white p-4 col-span-1 h-[476px] w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
                 <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
-                  alt="Rajib Hosen"
+                  src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
+                  alt="Jane Smith"
                   className="w-full h-[370px] object-cover"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
+                    Jane Smith
                   </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
+                  <p className="text-xl text-[#4E4E4E]">Web Developer</p>
                 </div>
               </div>
             </div>

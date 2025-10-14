@@ -25,7 +25,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn shadow-none border-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold">
+            <button className="btn shadow-none border-none px-9 py-8 rounded-3xl bg-[#01C561] text-white  text-xl font-semibold">
               Hire Us on Fiverr{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +48,7 @@ export default function Footer() {
           {/*  menu*/}
           <div>
             <ul className="space-y-2 mr-14">
+               <li className="text-2xl font-semibold text-white">Menu</li>
               <li>
                 <a className=" text-lg " href="#home">
                   Home

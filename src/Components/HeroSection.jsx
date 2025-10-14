@@ -32,7 +32,7 @@ export default function HeroSection() {
         <div>
           <button>
             <a
-              className="btn shadow-none px-9 py-6 rounded-2xl bg-[#01C561] text-white  text-xl font-semibold"
+           className="px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2"
               href="https://www.fiverr.com/fusecode"
               target="_blank"
               rel="noopener noreferrer"
