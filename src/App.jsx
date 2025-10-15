@@ -17,7 +17,7 @@ function App() {
 
   return (
 
-    <div className='bg-[#F4F4F4]'>
+    <div className='bg-[#F4F4F4] !overflow-hidden'>
        <HomeSection/>
        <Services/>
        <WhyChooseUs/>
