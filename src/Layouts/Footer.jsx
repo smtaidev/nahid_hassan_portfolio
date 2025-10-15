@@ -3,20 +3,17 @@ import AgencyLogo from "../Components/AgencyLogo";
 
 export default function Footer() {
   return (
-    <div className="bg-neutral inter  pt-22 xl:px-0 px-2 ">
+    <div className="bg-neutral inter  xl:pt-22 pt-10 xl:px-0 px-2 ">
       <footer className="xl:flex flex-row items-center justify-between sm:footer-horizontal text-white   max-w-screen-2xl mx-auto">
-        <aside className="space-y-12 xl:pb-0 pb-6">
+        <aside className="xl:space-y-12 space-y-7 xl:pb-0 pb-6">
           <div className="flex items-end">
-            <h1 className="mr-1 text-4xl font-semibold text-white">
-              Fusecode{" "}
-            </h1>
-            <p className="w-2 h-2 rounded-full bg-[#01C561]"></p>
+            
+          <AgencyLogo/>
           </div>
           <div className="bricolage">
-            <p className="font-bold text-6xl leading-[81px] text-white">
+            <p className="font-bold xl:text-6xl text-2xl xl:leading-[81px] leading-[45px] text-white">
               Get Started Today
-            </p>
-            <p className="font-semibold text-6xl leading-[81px] text-white">
+           <br></br>
               Let's Talk
             </p>
           </div>
@@ -25,7 +22,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn shadow-none border-none px-9 py-8 rounded-3xl bg-[#01C561] text-white  text-xl font-semibold">
+            <button className="btn shadow-none border-none xl:px-9 px-5 xl:py-8 py-4 rounded-3xl bg-[#01C561] text-white  xl:text-xl text-md font-semibold">
               Hire Us on Fiverr{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,30 +45,30 @@ export default function Footer() {
           {/*  menu*/}
           <div>
             <ul className="space-y-2 mr-14">
-               <li className="text-2xl font-semibold text-white">Menu</li>
+               <li className="xl:text-2xl text-lg  font-semibold text-white">Menu</li>
               <li>
-                <a className=" text-lg " href="#home">
+                <a className=" xl:text-lg text-sm " href="#home">
                   Home
                 </a>
               </li>
 
               <li>
-                <a className=" text-lg " href="#services">
+                <a className=" xl:text-lg text-sm  " href="#services">
                   Services
                 </a>
               </li>
               <li>
-                <a className=" text-lg " href="#projects">
+                <a className=" xl:text-lg text-sm  " href="#projects">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a className=" text-lg " href="#review">
+                <a className="xl:text-lg text-sm  " href="#review">
                   Review
                 </a>
               </li>
               <li>
-                <a className="text-lg " href="#about">
+                <a className="xl:text-lg text-sm " href="#about">
                   About Us
                 </a>
               </li>
@@ -80,15 +77,15 @@ export default function Footer() {
           {/* privacy */}
           <div>
             <ul className="space-y-2">
-              <li className="text-2xl font-semibold text-white">Privacy</li>
-              <li className="text-lg">Cookie Policy</li>
-              <li className="text-lg">Term Of Services</li>
-              <li className="text-lg">Policy Service</li>
+              <li className="xl:text-2xl text-lg l font-semibold text-white">Privacy</li>
+              <li className="xl:text-lg text-sm ">Cookie Policy</li>
+              <li className="xl:text-lg text-sm ">Term Of Services</li>
+              <li className="xl:text-lg text-sm ">Policy Service</li>
             </ul>
           </div>
         </nav>
       </footer>
-      <p className="text-lg text-[#D9D9D9] text-center pt-8 pb-16">
+      <p className="xl:text-lg text-md text-[#D9D9D9] text-center pt-8 pb-16">
         © 2025 - All rights Reserved by Fusecode
       </p>
     </div>

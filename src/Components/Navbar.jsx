@@ -100,13 +100,13 @@ export default function Navbar() {
             </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end xl:pr-[76.5px] pr-0">
         <a
           href="https://www.fiverr.com/fusecode"
           target="_blank"
           rel="noopener noreferrer"
         >
-        <button className="xl:px-6 px-3 xl:py-3 py-1 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto xl:gap-2 gap-1">
+        <button className="xl:px-6 px-3 xl:py-3 py-1 bg-[#01C561] text-white font-medium rounded-full hover:bg-[#05b158] transition flex items-center justify-center mx-auto xl:gap-2 gap-1">
             Hire Us on Fiverr{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-5"
             >
               <path
                 strokeLinecap="round"

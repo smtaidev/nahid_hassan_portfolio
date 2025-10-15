@@ -37,7 +37,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-20 inter text-center" ref={ref}>
+    <section className="xl:py-20 py-10 xl:px-0 px-2 inter text-center" ref={ref}>
       <div className="max-w-screen-2xl mx-auto">
         {/* Section Header */}
         <div className="mb-22">
@@ -87,7 +87,7 @@ export default function Projects() {
 
                     {/* Arrow Button */}
                     <div className="flex justify-end">
-                      <button className="p-2 rounded-full bg-green-500 text-white hover:bg-green-600 transition cursor-pointer">
+                      <button className="p-2 rounded-full bg-[#01C561] text-white hover:bg-green-600 transition cursor-pointer">
                         <ArrowUpRight size={30} />
                       </button>
                     </div>
@@ -105,7 +105,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2">
+            <button className="px-6 py-3 bg-[#01C561] text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto gap-2">
               View All Works <ArrowUpRight size={18} />
             </button>
           </a>

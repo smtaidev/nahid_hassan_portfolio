@@ -65,7 +65,7 @@ export default function OurProvideService() {
 
   return (
     <section
-      className="max-w-screen-2xl mx-auto inter xl:overflow-hidden py-30"
+      className="max-w-screen-2xl mx-auto inter xl:overflow-hidden xl:py-30 py-10 xl:px-0 px-2"
       ref={ref}
     >
       <div>
@@ -83,7 +83,7 @@ export default function OurProvideService() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:pl-2">
           {services.map((service, index) => (
             <div
               className="relative"

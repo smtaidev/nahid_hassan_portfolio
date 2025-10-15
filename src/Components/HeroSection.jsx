@@ -10,13 +10,13 @@ export default function HeroSection() {
 
   return (
     <div
-     className="flex flex-col xl:flex-row items-center h-auto xl:h-screen gap-12 max-w-screen-2xl mx-auto relative z-10 py-5 xl:py-0 inter"
+     className=" flex-row xl:flex items-center xl:px-0 px-2 h-auto xl:h-screen gap-12 max-w-screen-2xl mx-auto relative z-10 py-5 xl:py-0 inter"
 
       ref={ref}
     >
       {/* left side */}
       <div
-        className="space-y-18"
+        className="xl:space-y-18 space-y-8"
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
@@ -33,7 +33,7 @@ export default function HeroSection() {
         <div>
           <button>
             <a
-              className="xl:px-6 px-3 xl:py-3 py-1 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto xl:gap-2 gap-1"
+              className="xl:px-6 px-3 xl:py-3 py-1 bg-[#01C561] text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center mx-auto xl:gap-2 gap-1"
               href="https://www.fiverr.com/fusecode"
               target="_blank"
               rel="noopener noreferrer"
@@ -45,7 +45,7 @@ export default function HeroSection() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="size-5"
               >
                 <path
                   strokeLinecap="round"
@@ -115,7 +115,7 @@ export default function HeroSection() {
             />
           </div>
 
-          <div className="xl:w-md w-sm xl:h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
+          <div className="xl:w-md w-60 xl:h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
             <h1 className="text-center font-semibold xl:text-4xl text-xl text-white">
               MAUDUD AHMAD
             </h1>

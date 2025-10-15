@@ -62,7 +62,10 @@ export default function AllReview() {
   const [isEnd, setIsEnd] = useState(false);
 
   return (
-    <div className="relative inter max-w-screen-2xl mx-auto py-20" ref={ref}>
+    <div
+      className="relative inter max-w-screen-2xl mx-auto xl:py-20 py-10 xl:px-0 px-2"
+      ref={ref}
+    >
       <div className="mb-22">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Doubledot />
@@ -78,7 +81,7 @@ export default function AllReview() {
       <button
         ref={prevRef}
         disabled={isBeginning}
-        className={`absolute left-[-100px] top-2/3 -translate-y-1/2 z-10 p-3 rounded-full transition-opacity ${
+        className={`absolute xl:left-[-100px] left-0 top-2/3 -translate-y-1/2 z-10 p-3 rounded-full transition-opacity ${
           isBeginning ? "opacity-30 cursor-not-allowed" : "opacity-100"
         }`}
       >
@@ -100,7 +103,7 @@ export default function AllReview() {
       <button
         ref={nextRef}
         disabled={isEnd}
-        className={`absolute right-[-100px] top-2/3 -translate-y-1/2 z-10 p-3 rounded-full transition-opacity ${
+        className={`absolute xl:right-[-100px] right-0 top-2/3 -translate-y-1/2 z-10 p-3 rounded-full transition-opacity ${
           isEnd ? "opacity-30 cursor-not-allowed" : "opacity-100"
         }`}
       >
@@ -160,18 +163,21 @@ export default function AllReview() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="relative xl:w-[428px] w-[300px] xl:h-[655px] h-[585px] mx-auto ">
+            <div className=" relative xl:w-[428px] w-[250px] xl:h-[485px] h-[700px] mx-auto ">
               {/* Floating Quote Icon - completely outside clipped div */}
               <div
-                className={`w-12 h-12 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}
+                className={`w-14 h-14 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}
               >
-                <Quote className="w-6 h-6 text-white" />
+                <Quote className="w-7 h-7 text-white" />
               </div>
 
               {/* Clipped Card */}
               <div
-                className="bg-white w-full h-full rounded-4xl py-30 space-y-4 px-12 text-center relative z-0"
-                style={{ clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)" }}
+                className="bg-white w-full h-full py-30 space-y-4 px-12 text-center relative z-0"
+                style={{
+                  clipPath: "polygon(0 0, 100% 10%, 100% 90%, 0 100%)",
+                  borderRadius: "25px",
+                }}
               >
                 {/* Name */}
                 <h3 className="font-semibold text-gray-900 text-lg">

@@ -9,7 +9,7 @@ AOS.init();
 export default function Team() {
   const ref = useRef();
   return (
-    <section className="py-16 inter xl:h-[1012px]" ref={ref}>
+    <section className="xl:py-16 py-4 inter xl:h-[1012px]" ref={ref}>
       <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
         {/* Left content */}
         <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2">
@@ -65,7 +65,7 @@ export default function Team() {
           data-aos-duration="600"
         >
           {/* Top fade */}
-          <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
 
           {/* Scrollable list */}
           <div
@@ -79,7 +79,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
                   alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -95,7 +95,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/YCH7HbDj/image.png"
                   alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -111,7 +111,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
                   alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -127,7 +127,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
                   alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -143,7 +143,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
                   alt="John Doe "
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -159,7 +159,7 @@ export default function Team() {
                 <img
                   src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
                   alt="Jane Smith"
-                  className="w-full h-[370px] object-cover"
+                  className="w-full h-[370px] object-cover rounded-xl"
                 />
 
                 <div className="absolute bottom-4 left-4 text-white">
@@ -173,7 +173,7 @@ export default function Team() {
           </div>
 
           {/* Bottom fade */}
-          <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
         </div>
       </div>
     </section>

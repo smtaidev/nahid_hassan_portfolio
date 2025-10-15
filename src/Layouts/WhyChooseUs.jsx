@@ -3,8 +3,8 @@ import ChooseUs from "../Components/ChooseUs";
 
 export default function WhyChooseUs() {
   return (
-     <div className='relative pb-30'>
-        <img src="https://i.postimg.cc/gknDkdQ6/Frame-2147226960.png" alt=""  className='absolute top-0 left-0 w-[414px] h-[463px] xl:inline hidden '/>
+     <div className='relative'>
+        <img src="https://i.postimg.cc/gknDkdQ6/Frame-2147226960.png" alt=""  className='absolute xl:top-0 -top-2 left-0 xl:w-[414px] w-[100px] xl:h-[463px] h-[100px] '/>
       <ChooseUs />
     </div>
   );
