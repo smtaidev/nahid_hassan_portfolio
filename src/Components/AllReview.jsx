@@ -148,11 +148,12 @@ export default function AllReview() {
         onSwiper={(swiper) => {
           // Attach buttons after mount
           setTimeout(() => {
+            if (!swiper?.params?.navigation || !swiper.navigation) return;
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
-          });
+          }, 100);
         }}
         onSlideChange={(swiper) => {
           // Update button state

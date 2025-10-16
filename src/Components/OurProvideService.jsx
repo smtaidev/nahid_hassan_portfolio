@@ -91,6 +91,7 @@ export default function OurProvideService() {
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="600"
+              key={index}
             >
               {/* Green bar */}
               <div className="absolute -left-1.5 top-8 h-[89px] w-[8px] rounded-3xl bg-[#01C561]"></div>

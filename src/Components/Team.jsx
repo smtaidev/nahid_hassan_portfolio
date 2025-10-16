@@ -12,11 +12,14 @@ export default function Team() {
     <section className="xl:py-16 py-4 inter xl:h-[1012px]" ref={ref}>
       <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
         {/* Left content */}
-        <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2">
-          <p className="text-[#222325] xl:text-3xl text-lg font-medium flex items-center ">
+        <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2 ">
+          <div className=" flex items-center">
             <Doubledot />
-            Our Team
-          </p>
+            <p className="text-[#222325] xl:text-3xl text-lg font-medium ">
+              Our Team
+            </p>
+          </div>
+
           <h2 className="xl:text-6xl text-2xl bricolage font-semibold text-[#222325] xl:leading-[76px] leading-[50px] ">
             Meet Our Innovative Skilled Team Members
           </h2>
@@ -34,9 +37,7 @@ export default function Team() {
             target="_blank"
             rel="noopener noreferrer"
           >
-             <button className=" shadow-none border-none px-6 py-3   bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2">
-              
-              
+            <button className=" shadow-none border-none px-6 py-3   bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2">
               Hire Us on Fiverr{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +117,7 @@ export default function Team() {
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                   Maudud Ahmed
+                    Maudud Ahmed
                   </h3>
                   <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
                 </div>
@@ -148,7 +149,7 @@ export default function Team() {
 
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="font-semibold text-2xl text-[#222325]">
-                    John Doe 
+                    John Doe
                   </h3>
                   <p className="text-xl text-[#4E4E4E]">Sales Department</p>
                 </div>

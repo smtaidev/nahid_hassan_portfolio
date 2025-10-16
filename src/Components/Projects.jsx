@@ -37,7 +37,10 @@ export default function Projects() {
   ];
 
   return (
-    <section className="xl:py-20 py-10 xl:px-0 px-2 inter text-center" ref={ref}>
+    <section
+      className="xl:py-20 py-10 xl:px-0 px-2 inter text-center"
+      ref={ref}
+    >
       <div className="max-w-screen-2xl mx-auto">
         {/* Section Header */}
         <div className="mb-22">
@@ -55,10 +58,10 @@ export default function Projects() {
         {/* Project Cards Grid */}
         <div className="grid sm:grid-cols-2 gap-8">
           {projects.map((p, i) => (
-            <a href={p.src} target="_blank" rel="noopener noreferrer">
+            <a href={p.src} target="_blank" rel="noopener noreferrer" key={i}>
               {" "}
               <div
-                key={i}
+                
                 className="relative group h-[663px] bg-white rounded-2xl shadow-md overflow-hidden transition hover:border-[#01C561] hover:border-2 hover:bg-[#cdf1df] border border-transparent"
                 data-aos="fade-right"
                 data-aos-offset="200"
