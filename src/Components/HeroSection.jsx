@@ -22,7 +22,7 @@ export default function HeroSection() {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <h1 className="bricolage  xl:max-w-[808px] font-semibold xl:text-7xl text-2xl text-[#222325] xl:leading-[96px] leading-[50px]">
+        <h1 className="bricolage   xl:max-w-[808px] font-semibold xl:text-7xl text-2xl text-[#222325] xl:leading-[96px] leading-[50px]">
           Transforming Your Ideas into AI-Powered Apps & Websites
         </h1>
         <p className="font-medium xl:text-2xl text-lg xl:max-w-[764px] leading-[1.6]">
