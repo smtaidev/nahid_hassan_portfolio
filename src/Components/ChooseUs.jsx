@@ -97,10 +97,10 @@ export default function ChooseUs() {
                   >
                     <feature.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  <h3 className="xl:text-2xl text-lg font-semibold text-gray-900 mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-[#353535] leading-relaxed text-xl">
+                  <p className="text-[#353535] leading-relaxed xl:text-xl text-md">
                     {feature.description}
                   </p>
                 </div>
