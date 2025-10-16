@@ -73,11 +73,11 @@ export default function OurProvideService() {
         <div className="mb-12 xl:pl-0 pl-2">
           <div className="mb-4 flex items-center">
             <Doubledot />
-            <span className="xl:text-6xl text-2xl font-semibold text-[#222325]">
+            <span className="xl:text-3xl text-2xl font-semibold text-[#222325]">
               Our Services
             </span>
           </div>
-          <h2 className="text-balance bricolage xl:text-4xl text-lg font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-balance bricolage xl:text-6xl text-lg font-bold tracking-tight text-gray-900 ">
             Make Your Projects Look More <br></br>Elegant And Stylish
           </h2>
         </div>
