@@ -41,7 +41,7 @@ export default function ChooseUs() {
   ];
 
   return (
-    <section className="relative inter xl:py-30 py-10  mx-2 max-w-screen-2xl xl:mx-auto" ref={ref}>
+    <section className="relative inter xl:py-30 py-10  mx-2 lg:max-w-screen-xl xl:mx-auto" ref={ref}>
       <div>
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -64,7 +64,7 @@ export default function ChooseUs() {
           {/* Left - Image */}
 
           <div
-            className="xl:h-[700px] xl:col-span-5 rounded-2xl overflow-hidden shadow-xl xl:mb-0 mb-5"
+            className="lg:h-[762px] xl:col-span-5 rounded-2xl overflow-hidden shadow-xl xl:mb-0 mb-5"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
@@ -80,7 +80,7 @@ export default function ChooseUs() {
 
           {/* Right - Feature Cards */}
           <div
-            className="xl:col-span-7 xl:h-[600px]"
+            className="xl:col-span-7 lg:h-[600px]"
             data-aos="fade-left"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"

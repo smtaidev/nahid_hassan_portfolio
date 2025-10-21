@@ -10,23 +10,23 @@ export default function HeroSection() {
 
   return (
     <div
-     className=" flex-row xl:flex items-center xl:px-0 px-2 h-auto xl:h-screen gap-12 max-w-screen-2xl mx-auto relative z-10 py-5 xl:py-0 inter"
+     className=" flex-row xl:flex items-center py-5 lg:py-[80px] xl:px-0 px-2 h-auto lg:h-[750px] gap-12 lg:max-w-screen-xl mx-auto relative z-10 inter"
 
       ref={ref}
     >
       {/* left side */}
       <div
-        className="xl:space-y-18 space-y-8"
+        className="lg:space-y-10   space-y-8"
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <h1 className="bricolage   xl:max-w-[808px] font-semibold xl:text-7xl text-2xl text-[#222325] xl:leading-[96px] leading-[50px]">
+        <h1 className="bricolage  lg:max-w-[708px] font-semibold lg:text-5xl  text-2xl text-[#222325] lg:leading-[76px]  leading-[50px]">
           Transforming Your Ideas into AI-Powered Apps & Websites
         </h1>
-        <p className="font-medium xl:text-2xl text-lg xl:max-w-[764px] leading-[1.6]">
-          With deep expertise in AI and full-stack development, we’ve built
+        <p className="font-medium lg:text-2xl text-lg lg:max-w-[708px] leading-[1.6]">
+          With deep expertise in AI and full-stack development, we’ve buil
           apps, websites, and custom chatbots for clients on Fiverr — achieving
           consistent ★5.0 reviews and long-term partnerships.
         </p>
@@ -106,16 +106,16 @@ export default function HeroSection() {
             <img
               src="https://i.postimg.cc/4dkp1XHq/51e837216b294d69a844813e668d09beec0f0afe.png"
               alt=""
-              className="xl:w-[729px] xl:h-[538px] rounded-xl"
+              className="xl:w-[684px] xl:h-[483px] rounded-xl"
             />
             <img
               src="https://i.postimg.cc/FHtQ9cj8/Group-1.png"
-              className="absolute -top-9 xl:-right-9 -right-2  xl:w-[150px] w-[70px]"
+              className="absolute -top-9 xl:-right-9 -right-2  xl:w-[145px] w-[65px]"
               alt=""
             />
           </div>
 
-          <div className="xl:w-md w-60 xl:h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
+          <div className="lg:w-sm w-60 lg:h-36  absolute left-1/2 -translate-x-1/2 -bottom-20 space-y-3  backdrop-blur-sm px-8 py-6 rounded-xl shadow-md">
             <h1 className="text-center font-semibold xl:text-4xl text-xl text-white">
               MAUDUD AHMAD
             </h1>

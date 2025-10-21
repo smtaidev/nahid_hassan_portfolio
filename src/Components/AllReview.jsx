@@ -63,7 +63,7 @@ export default function AllReview() {
 
   return (
     <div
-      className="relative inter max-w-screen-2xl mx-auto xl:py-20 py-10 xl:px-0 px-2"
+      className="relative inter lg:max-w-screen-xl mx-auto xl:py-20 py-10 xl:px-0 px-2"
       ref={ref}
     >
       <div className="mb-22">
@@ -138,7 +138,7 @@ export default function AllReview() {
           },
           1024: {
             slidesPerView: 3, // large screens
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
         }}
         navigation={{
@@ -164,7 +164,7 @@ export default function AllReview() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className=" relative xl:w-[428px] w-[250px] xl:h-[485px] h-[700px] mx-auto ">
+            <div className=" relative lg:w-[300px] w-[250px] lg:h-[605px] h-[700px] mx-auto ">
               {/* Floating Quote Icon - completely outside clipped div */}
               <div
                 className={`w-14 h-14 ${testimonial.color} absolute top-[119px] -left-6 rounded-full flex items-center justify-center shadow-lg z-50`}

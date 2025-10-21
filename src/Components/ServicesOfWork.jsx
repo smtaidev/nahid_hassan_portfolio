@@ -22,19 +22,19 @@ export default function ServicesOfWork() {
       data-aos-duration="600"
       ref={ref}
     >
-      <nav className="bg-[#1a1a1a] xl:py-4 py-10 ">
+      <nav className="bg-[#1a1a1a] lg:py-4 py-10 ">
         <div>
           <ul className="xl:flex flex-row items-center xl:gap-18 justify-center flex-wrap">
             {services.map((service, index) => (
               <li
                 key={service.name}
-                className="xl:flex items-center xl:text-start text-center gap-2 "
+                className="lg:flex items-center lg:text-start text-center gap-2 "
               >
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={service.href}
-                  className="text-white   hover:text-emerald-400 transition-colors text-4xl font-medium px-3 py-2"
+                  className="text-white   hover:text-emerald-400 transition-colors text-3xl font-medium px-2 py-2"
                 >
                   {service.name}
                 </a>

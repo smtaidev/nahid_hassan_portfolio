@@ -65,7 +65,7 @@ export default function OurProvideService() {
 
   return (
     <section
-      className="max-w-screen-2xl mx-auto inter xl:overflow-hidden xl:py-30 py-10 xl:px-0 px-2"
+      className="lg:max-w-screen-xl mx-auto inter xl:overflow-hidden xl:py-30 py-10 xl:px-0 px-2"
       ref={ref}
     >
       <div>

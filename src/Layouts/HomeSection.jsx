@@ -14,7 +14,7 @@ export default function HomeSection() {
     >
       <p className="absolute bg-[#f5f0bf] xl:w-[1236px] w-[400px] xl:h-[1236px] rounded-full xl:-top-[508px] -top-[10px] xl:-left-[494px] -left-[12px] blur-3xl opacity-40 "></p>
       <p className="absolute bg-[#37e4b5] xl:w-[1236px] w-[400px] xl:h-[1236px] rounded-full xl:-bottom-[544px] -bottom-[15px] xl:-right-[180px] -right-[12px] blur-3xl opacity-50 "></p>
-      <Navbar />
+     
       <HeroSection />
     </div>
   );

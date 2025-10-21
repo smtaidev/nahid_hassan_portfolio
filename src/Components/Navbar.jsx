@@ -1,9 +1,17 @@
 import React from "react";
 import AgencyLogo from "./AgencyLogo";
-
+import { useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 export default function Navbar() {
+    const ref = useRef();
   return (
-    <div className="navbar  inter bg-transparent  max-w-screen-2xl mx-auto h-[120px]">
+    <div className="navbar inter lg:max-w-screen-xl mx-auto h-[80px]"   data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"      ref={ref}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -100,7 +108,7 @@ export default function Navbar() {
             </li>
         </ul>
       </div>
-      <div className="navbar-end xl:pr-[76.5px] pr-0">
+      <div className="navbar-end ">
         <a
           href="https://www.fiverr.com/fusecode"
           target="_blank"

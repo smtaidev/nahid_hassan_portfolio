@@ -1,19 +1,74 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Doubledot from "./Doubledot";
-import { useRef } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
+import "aos/dist/aos.css";
+import Card from "./Card";
 
 export default function Team() {
   const ref = useRef();
+  const upperRef = useRef(null);
+  const lowerRef = useRef(null);
+  const animationRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init();
+
+    const upper = upperRef.current;
+    const lower = lowerRef.current;
+
+    let upperScroll = 0;
+    let lowerScroll = 0;
+    const speed = 0.4; // smooth and steady
+
+    function animateScroll() {
+      if (upper && lower) {
+        // Move continuously
+        upperScroll += speed;
+        lowerScroll -= speed;
+
+        // Wrap around seamlessly
+        const upperLimit = upper.scrollHeight / 2;
+        const lowerLimit = lower.scrollHeight / 2;
+
+        if (upperScroll >= upperLimit) {
+          upperScroll = 0;
+        }
+        if (lowerScroll <= 0) {
+          lowerScroll = lowerLimit;
+        }
+
+        upper.scrollTo(0, upperScroll);
+        lower.scrollTo(0, lowerScroll);
+      }
+
+      animationRef.current = requestAnimationFrame(animateScroll);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          animationRef.current = requestAnimationFrame(animateScroll);
+        } else {
+          cancelAnimationFrame(animationRef.current);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => {
+      cancelAnimationFrame(animationRef.current);
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section className="xl:py-16 py-4 inter xl:h-[1012px]" ref={ref}>
-      <div className="max-w-screen-2xl mx-auto  flex flex-col lg:flex-row gap-16 items-center">
-        {/* Left content */}
-        <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2 ">
-          <div className=" flex items-center">
+      <div className="lg:max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+        {/* Left Content */}
+        <div className="lg:w-1/2 space-y-11 xl:pl-0 pl-2">
+          <div className="flex items-center">
             <Doubledot />
             <p className="text-[#222325] xl:text-3xl text-lg font-medium ">
               Our Team
@@ -37,7 +92,7 @@ export default function Team() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className=" shadow-none border-none px-6 py-3   bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2">
+            <button className="shadow-none border-none px-6 py-3 bg-green-500 text-white font-medium rounded-full hover:bg-green-600 transition flex items-center justify-center gap-2">
               Hire Us on Fiverr{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,123 +112,86 @@ export default function Team() {
           </a>
         </div>
 
-        {/* Right content - scrollable team pictures with fade effect */}
+        {/* Right Content */}
         <div
-          className="lg:w-1/2 relative "
+          className="lg:w-1/2 relative"
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="600"
         >
-          {/* Top fade */}
+          {/* Fade overlays */}
           <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
 
-          {/* Scrollable list */}
-          <div
-            className="h-[820px] overflow-y-auto space-y-6 scrollbar-hide pr-2"
-            style={{ scrollBehavior: "smooth" }}
-          >
-            <div className="grid grid-cols-2 gap-6 ">
-              {/* Rajib Hosen - Small card, top right */}
-              {/* Rajib Hosen */}
-              <div className="bg-white p-4 col-span-1 xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
-                <img
-                  src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
-                  alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">UI/UX Designer</p>
-                </div>
+          <div className="grid grid-cols-2 gap-8">
+            {/* Column 1 */}
+            <div
+              ref={upperRef}
+              className="h-[820px] overflow-y-auto pr-2 scrollbar-hide"
+            >
+              <div className="space-y-6">
+                {/* duplicated list for smooth looping */}
+                {[...Array(2)].map((_, i) => (
+                  <React.Fragment key={i}>
+                    <Card
+                      name="Rajib Hosen"
+                      role="UI/UX Designer"
+                      img="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
+                    />
+                    <Card
+                      name="Mehedi Hasan"
+                      role="Web Developer"
+                      img="https://i.postimg.cc/YCH7HbDj/image.png"
+                    />
+                    <Card
+                      name="Maudud Ahmed"
+                      role="CEO at Fusecode"
+                      img="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                    />
+                    <Card
+                      name="Peter Simons"
+                      role="CEO at Fusecode"
+                      img="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
+                    />
+                  </React.Fragment>
+                ))}
               </div>
+            </div>
 
-              {/* Mehedi Hasan */}
-              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
-                <img
-                  src="https://i.postimg.cc/YCH7HbDj/image.png"
-                  alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    Mehedi Hasan
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">Web Developer</p>
-                </div>
-              </div>
-
-              {/* Maudud Ahmed */}
-              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
-                <img
-                  src="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
-                  alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    Maudud Ahmed
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
-                </div>
-              </div>
-
-              {/* Peter Simons */}
-              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
-                <img
-                  src="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
-                  alt="Rajib Hosen"
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    Rajib Hosen
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">CEO at Fusecode</p>
-                </div>
-              </div>
-
-              {/* John Doe */}
-              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mb-10">
-                <img
-                  src="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
-                  alt="John Doe "
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    John Doe
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">Sales Department</p>
-                </div>
-              </div>
-
-              {/* Jane Smith */}
-              <div className="bg-white p-4 col-span-1  xl:h-[476px] h-[500px] xl:w-[362px] row-span-1 relative rounded-2xl overflow-hidden group cursor-pointer mt-10">
-                <img
-                  src="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
-                  alt="Jane Smith"
-                  className="w-full h-[370px] object-cover rounded-xl"
-                />
-
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="font-semibold text-2xl text-[#222325]">
-                    Jane Smith
-                  </h3>
-                  <p className="text-xl text-[#4E4E4E]">Web Developer</p>
-                </div>
+            {/* Column 2 */}
+            <div
+              ref={lowerRef}
+              className="h-[820px] overflow-y-auto pr-2 scrollbar-hide"
+            >
+              <div className="space-y-6">
+                {[...Array(2)].map((_, i) => (
+                  <React.Fragment key={i}>
+                    <Card
+                      name="John Doe"
+                      role="Sales Department"
+                      img="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
+                    />
+                    <Card
+                      name="Jane Smith"
+                      role="Web Developer"
+                      img="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
+                    />
+                    <Card
+                      name="Mehedi Hasan"
+                      role="Web Developer"
+                      img="https://i.postimg.cc/YCH7HbDj/image.png"
+                    />
+                    <Card
+                      name="Maudud Ahmed"
+                      role="CEO at Fusecode"
+                      img="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                    />
+                  </React.Fragment>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Bottom fade */}
           <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
         </div>
       </div>

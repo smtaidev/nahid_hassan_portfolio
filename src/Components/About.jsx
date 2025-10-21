@@ -9,7 +9,7 @@ AOS.init();
 export default function About() {
    const ref = useRef();
   return (
-    <section className="relative inter max-w-screen-2xl mx-auto overflow-hidden xl:py-30 py-10 xl:px-0 px-2" ref={ref} >
+    <section className="relative inter lg:max-w-screen-xl mx-auto overflow-hidden xl:py-30 py-10 xl:px-0 px-2" ref={ref} >
       <div className="relative z-10 ">
         <div className="grid xl:grid-cols-2 grid-cols-1 gap-10 items-center">
           {/* Left Content */}

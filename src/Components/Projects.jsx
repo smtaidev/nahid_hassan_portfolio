@@ -41,7 +41,7 @@ export default function Projects() {
       className="xl:py-20 py-10 xl:px-0 px-2 inter text-center"
       ref={ref}
     >
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="lg:max-w-screen-xl mx-auto">
         {/* Section Header */}
         <div className="mb-22">
           <div className="flex items-center justify-center gap-2 mb-2">
