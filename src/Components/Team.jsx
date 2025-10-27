@@ -134,24 +134,24 @@ export default function Team() {
                 {[...Array(2)].map((_, i) => (
                   <React.Fragment key={i}>
                     <Card
-                      name="Rajib Hosen"
+                      name="Sazzad"
                       role="UI/UX Designer"
-                      img="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
+                      img="https://i.postimg.cc/TKmzTytP/Whats-App-Image-2025-10-24-at-15-19-00-1fc3cc34-Muhammad-Sazzad.jpg"
                     />
                     <Card
-                      name="Mehedi Hasan"
-                      role="Web Developer"
-                      img="https://i.postimg.cc/YCH7HbDj/image.png"
+                      name="Md. Israkul Islam"
+                      role="Frontend Developer"
+                      img="https://i.postimg.cc/XXHCKL9Q/1757319913721-Israkul-Islam.jpg"
                     />
                     <Card
-                      name="Maudud Ahmed"
-                      role="CEO at Fusecode"
-                      img="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                      name="Rifat Sarker"
+                      role="Backend Developer"
+                      img="https://i.postimg.cc/cvN4ftk5/1707805429343-1-Rifat-Sarker.jpg"
                     />
                     <Card
-                      name="Peter Simons"
-                      role="CEO at Fusecode"
-                      img="https://i.postimg.cc/Hngzxcq7/Frame-2147226969-2.png"
+                      name="Shahidul Islam"
+                      role="Frontend Developer"
+                      img="https://i.postimg.cc/k25Y1fH6/290565919-482999250252208-8067465362451643121-n-Md-Shahidul.jpg"
                     />
                   </React.Fragment>
                 ))}
@@ -167,24 +167,24 @@ export default function Team() {
                 {[...Array(2)].map((_, i) => (
                   <React.Fragment key={i}>
                     <Card
-                      name="John Doe"
-                      role="Sales Department"
-                      img="https://i.postimg.cc/hvBsjzkb/Frame-2147226969-1.png"
+                      name="Md. Israkul Islam"
+                      role="Frontend Developer"
+                      img="https://i.postimg.cc/XXHCKL9Q/1757319913721-Israkul-Islam.jpg"
                     />
                     <Card
-                      name="Jane Smith"
-                      role="Web Developer"
-                      img="https://i.postimg.cc/vTshBgJ7/Frame-2147226968.png"
+                      name="Sazzad"
+                      role="UI/UX Designer"
+                      img="https://i.postimg.cc/TKmzTytP/Whats-App-Image-2025-10-24-at-15-19-00-1fc3cc34-Muhammad-Sazzad.jpg"
                     />
                     <Card
-                      name="Mehedi Hasan"
-                      role="Web Developer"
-                      img="https://i.postimg.cc/YCH7HbDj/image.png"
+                      name="Shahidul Islam"
+                      role="Frontend Developer"
+                      img="https://i.postimg.cc/k25Y1fH6/290565919-482999250252208-8067465362451643121-n-Md-Shahidul.jpg"
                     />
                     <Card
-                      name="Maudud Ahmed"
-                      role="CEO at Fusecode"
-                      img="https://i.postimg.cc/DfW6bfDJ/Frame-2147226969.png"
+                      name="Rifat Sarker"
+                      role="Backend Developer"
+                      img="https://i.postimg.cc/cvN4ftk5/1707805429343-1-Rifat-Sarker.jpg"
                     />
                   </React.Fragment>
                 ))}
